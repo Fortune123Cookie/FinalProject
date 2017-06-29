@@ -1,0 +1,25 @@
+#Open{
+    font-size: 4.5em;
+    color:blue;
+    text-align: center;
+}
+
+html{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+p{
+    font-size: 2em;
+    color:blue;
+}
+
+h3{
+    font-size: 2em;
+    color:blue;
+}
+
+audio{
+    display:none;
+}
+

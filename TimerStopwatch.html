@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="TimerStopwatch.css" type="text/css">
+        <script src="TimerStopwatch.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1 id="Open"><strong>WELCOME TO TIMER AND STOPWATCH!</strong></h1>
+        <h3>Timer</h3>
+        <p>Please type how much time the timer should be set to.</p>
+        <br>
+        <p>The time has been set to:</p>
+        <p id="Input"></p>
+        <input type="text" id="userInput"=> :
+        <input type="text" id="userInput2"=>Please input the time here.
+        <button onclick="test()">Enter</button>
+        <script>
+            function test()
+            {
+                var userInput = document.getElementById("userInput").value;
+                var userInput2 = document.getElementById("userInput2").value;
+                document.getElementById("Input").innerHTML=userInput + " minutes and " + userInput2 + " seconds";
+            }
+        </script>
+        <br>
+        <br>
+        <br>
+        <br>    
+        <button onClick = "startClick()">Start</button>
+        <br>
+        <br>
+        <button onClick = "cancelClick()">Cancel</button>
+        <br>
+        <br>    
+        <button id="Pause" onClick = "pauseClick()" >Pause</button>
+        <br>
+        <br>
+        <audio controls id="Alarm">
+        <source src="Alarm.mp3" type="audio/mpeg">
+        </audio>
+    </body>
+</html>
